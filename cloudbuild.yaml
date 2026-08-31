@@ -1,0 +1,37 @@
+# This is your new Cloud Build configuration file.
+# ... other comments
+
+steps:
+  # 1. Install all project dependencies using the official Node 20 image
+  - name: 'node:20'
+    id: 'npm install'
+    entrypoint: 'npm'
+    args: ['install']
+
+  # 2. Build the React app for production
+  - name: 'node:20'
+    id: 'npm build'
+    entrypoint: 'npm'
+    args: ['run', 'build']
+    # Wait for 'npm install' to finish before running this step
+    waitFor: ['npm install']
+
+  # 3. Deploy the built app to Firebase Hosting
+  - name: 'us-docker.pkg.dev/firebase-cli/us/firebase:15.21.0'
+    id: 'Deploy to Firebase'
+    args:
+      - 'deploy'
+      - '--only'
+      - 'hosting'
+      - '--project'
+      - '$PROJECT_ID'
+      - '--non-interactive'
+      - '--force'
+    waitFor: ['npm build']
+
+# Set a reasonable timeout for the entire build
+timeout: '1600s'
+
+# Configure logging for user-specified service account
+options:
+  logging: CLOUD_LOGGING_ONLY

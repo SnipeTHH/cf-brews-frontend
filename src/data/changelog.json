@@ -1,0 +1,1838 @@
+[
+  {
+    "date": "2026-05-19",
+    "changes": [
+      {
+        "scope": "Frontend",
+        "type": "refactor",
+        "message": "update references from Vertex AI to Gemini Enterprise Agent Platform across documentation and UI components",
+        "commit": "ad115b7",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "refactor",
+        "message": "remove hardcoded Charlie mock data from Customer360 graph loading logic",
+        "commit": "d4556f1",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "add mock data for Charlie and reduce graph node layout radii in Customer360 page",
+        "commit": "ffa3165",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "fix",
+        "message": "completely bind chatContainerRef and remove messagesEndRef to prevent window jump-scrolling",
+        "commit": "54799f9",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "refactor",
+        "message": "move Customer360 profile selection dropdown to the informational side panel",
+        "commit": "5f6e0b2",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "docs",
+        "message": "update SQL security differentiator blurb in operations tab",
+        "commit": "d67b940",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "fix",
+        "message": "prevent scrollIntoView on mount in conversational assistant",
+        "commit": "149250b",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "fix",
+        "message": "remove autofocus useEffect to prevent page scroll jump on load",
+        "commit": "1a3071b",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "restructure Brewery Assistant into a Tabbed Hub and add Operations NL-to-SQL Data Agent",
+        "commit": "f792c87",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "add HNSW vector search columnar engine acceleration showcase to search UI",
+        "commit": "2bff506",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "implement project changelog page and configure environment ignore rules",
+        "commit": "d974df2",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "restructure Analytics page into a premium Tabbed Analytics Hub",
+        "commit": "c6e2fc3",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "add AlloyDB AI sentiment analysis and feedback summary dashboard to Analytics page",
+        "commit": "e09d7ad",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "change double-quoted \"Active\" to single-quoted 'Active' to fix ColdFusion compilation syntax error",
+        "commit": "172fdf8",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "add batch_status enum context to Gemini SQL translator to prevent invalid enum comparison",
+        "commit": "194e42f",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "use PostgreSQL dollar-quoting for native ai.generate prompt to prevent single quote string termination",
+        "commit": "2be0185",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "use single quotes for 'BLOCKED' in ai.generate prompt to avoid ColdFusion compilation error",
+        "commit": "9f73a78",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "feat",
+        "message": "use native PG18 ai.generate function for SQL translation, removing custom model registration",
+        "commit": "f989dc1",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "use correct :generateContent REST method for Gemini model registration in AlloyDB",
+        "commit": "f5717b7",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "use PostgreSQL dollar-quoting to prevent string premature termination",
+        "commit": "4d66270",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "include SQL exception detail in QueryData error response",
+        "commit": "78c0845",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "escape double quotes by using single quotes for prompt in natural-query.cfm",
+        "commit": "cfe7e0a",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "feat",
+        "message": "implement secure operations NL-to-SQL data agent using Gemini 2.5 Flash and Parameterized Secure Views",
+        "commit": "69b5995",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "refactor",
+        "message": "remove redundant customer seeding from feedback database script",
+        "commit": "2a27cc8",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "feat",
+        "message": "implement AlloyDB AI sentiment analysis and feedback summary endpoints with database seeding script",
+        "commit": "f9f7e25",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2026-05-18",
+    "changes": [
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "add educational documentation sections and SQL copy functionality to BreweryAssistant and Dashboard pages",
+        "commit": "84bf601",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "unify dashboard layout with border styling and add descriptive orchestration components to inventory and dashboard pages",
+        "commit": "d65e05b",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "add ColdFusion Orchestration Differentiator informational callouts to key application pages",
+        "commit": "b5c790d",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "add ColdFusion Orchestration Differentiator informational callouts to key application pages",
+        "commit": "9b32515",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "refactor",
+        "message": "clean up Analytics page UI and add HTAP code snippet functionality",
+        "commit": "3d8d795",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "add educational sandbox section with copyable hybrid SQL search query to BrewerySearch page",
+        "commit": "dcf32de",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "add GQL property graph traversal buttons to BreweryAssistant for friend recommendations and anomaly detection",
+        "commit": "32a0352",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "move ColdFusion Orchestration Differentiator component to top of Customer360 layout",
+        "commit": "ce3a26e",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "refactor",
+        "message": "reorder Brewery Assistant in sidebar navigation list",
+        "commit": "d79794a",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "refactor",
+        "message": "reorder Brewery Assistant in sidebar navigation list",
+        "commit": "5d8fd4c",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "docs",
+        "message": "update Customer360 copy to emphasize knowledge graphs and reorder info panel content",
+        "commit": "2ceb00f",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "docs",
+        "message": "remove version year from Adobe ColdFusion reference in Home page description",
+        "commit": "859858f",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "refactor",
+        "message": "remove version number from Adobe ColdFusion description in Customer360 page",
+        "commit": "596aed8",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "update Customer360 UI with new layout styling and educational demo section",
+        "commit": "dd173f6",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "add Recipes page to navigation and wrap GQL strings in JSX fragments for formatting consistency",
+        "commit": "390df53",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "add Customer 360 page to visualize social graph recommendations via BigQuery SQL property graphs",
+        "commit": "f6c373d",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "docs",
+        "message": "update tool integration documentation to emphasize consolidating endpoints into the cf-brews-api OpenAPI schema",
+        "commit": "dcfb676",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "docs",
+        "message": "update tool integration documentation to emphasize consolidating endpoints into the cf-brews-api OpenAPI schema",
+        "commit": "f83d04a",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "docs",
+        "message": "add integration guide for GenAI agent graph tool-use via ColdFusion API",
+        "commit": "9c3e1b8",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "sanitize customer name input and simplify BigQuery graph reference in recommendations API",
+        "commit": "3d3e336",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "feat",
+        "message": "add recommendations endpoint to fetch peer-suggested beers via BigQuery graph query",
+        "commit": "6b35bf6",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2026-04-26",
+    "changes": [
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Updated USED BY comment",
+        "commit": "86e343d",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2026-02-01",
+    "changes": [
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "Enhance image modal with navigation and centralize architecture diagram data for dynamic display.",
+        "commit": "c54d8f8",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "Add new architecture and flow diagrams for infrastructure, CI/CD, and semantic search, update existing diagrams, and integrate them into the Home page.",
+        "commit": "4412706",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "docs",
+        "message": "update project description to highlight HTAP, No-ETL AI, Semantic AI, and standard SQL integration.",
+        "commit": "010eb35",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "refactor",
+        "message": "Reorder AI Agents and Hybrid Semantic Search cards on the Home page.",
+        "commit": "ff4db50",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "Add UI buttons for hybrid and semantic search discovery examples.",
+        "commit": "a184624",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "Add a \"Hybrid Semantic Search\" differentiator card and adjust the grid layout for core differentiators.",
+        "commit": "971b42a",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "add Search and Zap icons for new RAG buttons.",
+        "commit": "2c54c8b",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "enhance search result relevance display with match type indicators and refined flavor score tiers.",
+        "commit": "6194bf9",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "Update Brewery Assistant description to emphasize ColdFusion's role in agent orchestration, data binding, and tool use.",
+        "commit": "4aa105f",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "enhance and relocate the hybrid search logic explanation with a more detailed educational demo section.",
+        "commit": "f0a90fc",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "Introduce a new BrewerySearch page with semantic search capabilities and update sidebar navigation.",
+        "commit": "1be82e6",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "docs",
+        "message": "Update API endpoint comments to reflect calls to AlloyDB AI and Vertex AI, and usage by Google Cloud Conversational Agents.",
+        "commit": "0e2e002",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "feat",
+        "message": "add description column to beer search results.",
+        "commit": "e10c23b",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "refactor",
+        "message": "use `len()` instead of `recordCount` for results count.",
+        "commit": "53e2596",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "feat",
+        "message": "Add returnType array to beer search query.",
+        "commit": "cac7e95",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Apply COALESCE to recipe_name and description in ts_rank calculation to handle potential NULL values.",
+        "commit": "0f7416b",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "feat",
+        "message": "Add new API endpoint for hybrid AI-driven beer search using vector embeddings and text ranking.",
+        "commit": "250f28c",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2026-01-17",
+    "changes": [
+      {
+        "scope": "Frontend",
+        "type": "feat",
+        "message": "update `ops-physical.png` and include `.DS_Store` files.",
+        "commit": "56ce15e",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-11-19",
+    "changes": [
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "revert: Restore original row count query",
+        "commit": "0298920",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Use approximate row count for performance",
+        "commit": "8c03753",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-11-09",
+    "changes": [
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Allow Home to load and not wait on Cloud Run",
+        "commit": "f0049a6",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Added Operations diagram",
+        "commit": "d902eea",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "layout change",
+        "commit": "087f305",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "syntax fixes",
+        "commit": "3a099ec",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Added to page content",
+        "commit": "f15d8f2",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Adding home page",
+        "commit": "e8c4c2b",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Reference color and status",
+        "commit": "700cd51",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Added focus to the text box for better UI",
+        "commit": "ba0c8ca",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Added recipe view",
+        "commit": "76dcecd",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Added application scope for DSNs",
+        "commit": "d5ce11e",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "added more secrets",
+        "commit": "86d7b89",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Added additional Secrets",
+        "commit": "ccd2c63",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "added batch status",
+        "commit": "952284f",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Added information on recipes",
+        "commit": "61c40a4",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-11-08",
+    "changes": [
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Removed Java",
+        "commit": "bedb186",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "UI Changes",
+        "commit": "1dfb16e",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Sensor UI change",
+        "commit": "72e3e9d",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Adding inventory",
+        "commit": "fda9628",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Adding Vats",
+        "commit": "8dd055c",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Adding batch creation",
+        "commit": "91dd03b",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "adding batches code",
+        "commit": "a0cf7e4",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Added three more suggested queries",
+        "commit": "8750f01",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "added bubbles",
+        "commit": "e9a5b83",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "changed the beer",
+        "commit": "bb44633",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Prime agent",
+        "commit": "59b7110",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Syntax correction",
+        "commit": "2454730",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Made session constant",
+        "commit": "b2082d5",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Enabling assistant.",
+        "commit": "09430d6",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Removed Java",
+        "commit": "7deb33f",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "system info",
+        "commit": "b10394b",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Adding inventory",
+        "commit": "9bc50e3",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Adding Vats",
+        "commit": "d303405",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Adding batch creation",
+        "commit": "5998da0",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "changes for chat",
+        "commit": "e4215e7",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Adding chat agent code",
+        "commit": "0e5ccb7",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-11-07",
+    "changes": [
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "UI changes",
+        "commit": "144c1da",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "UI changes",
+        "commit": "2ca4f21",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "UI updates",
+        "commit": "ff45f5e",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Made offline/online global",
+        "commit": "146459e",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Wording change",
+        "commit": "9b8deba",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Files for Agent",
+        "commit": "b11eaee",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Updated stats",
+        "commit": "5649c09",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "type casting",
+        "commit": "a0c764c",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "duplicate columns fix",
+        "commit": "32700b9",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Removed -- from SQL due to errors",
+        "commit": "7b6e233",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Updated endpoint",
+        "commit": "cecfb62",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Change due to database table changes",
+        "commit": "037164d",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-11-06",
+    "changes": [
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "text updates",
+        "commit": "543b38a",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "changed to strings",
+        "commit": "046ef61",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Added the http module",
+        "commit": "a0b10be",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "http issues",
+        "commit": "1b3eb50",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "SQL changes",
+        "commit": "d6deed0",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Fixed BQ DSN name",
+        "commit": "13fe220",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Added predictions calls",
+        "commit": "34d73ca",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Adding BQ datasource",
+        "commit": "1630990",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Skip certificate validation",
+        "commit": "1f97e87",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Added BQ driver to Dockerfile",
+        "commit": "263b83a",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Added Pending to the status check",
+        "commit": "51c18ae",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-11-05",
+    "changes": [
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "layout change",
+        "commit": "167a3bf",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "removed console logs",
+        "commit": "0055038",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "fetchretry changes",
+        "commit": "516159a",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "working on predictions",
+        "commit": "38c880f",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "typo fixed",
+        "commit": "5d39f69",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "added warning",
+        "commit": "4dc4eb4",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Pages reference change",
+        "commit": "ffb358d",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Syntax on page for vats",
+        "commit": "5757edb",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Working on dashboard",
+        "commit": "347b810",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Added status checks",
+        "commit": "856217b",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Added DB stats",
+        "commit": "9cab483",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Updates for timing out and complex queries",
+        "commit": "2caae72",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Changed to just do two Explain queries and no output grid",
+        "commit": "64a6fcd",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "working on predictions",
+        "commit": "0e1dd6c",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "changed alerts thresholds",
+        "commit": "bf08593",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "code fixes",
+        "commit": "9d53162",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Added queries to stats and alerts",
+        "commit": "40c2af7",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Working on dashboard",
+        "commit": "f615ddd",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Added endpoints for row counts",
+        "commit": "2aef1ba",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Updates for timing out and complex queries",
+        "commit": "ccacf80",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Changed to just do two Explain queries and no output grid",
+        "commit": "c924eaf",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-11-04",
+    "changes": [
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Green and REd button bug",
+        "commit": "f5bd527",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-11-03",
+    "changes": [
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Added second run query button",
+        "commit": "b82e23f",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "staging queries",
+        "commit": "dbbf7a5",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "changes to when APIs called",
+        "commit": "99f3bbb",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Layout changes",
+        "commit": "78c85a4",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "removed status references",
+        "commit": "a3e244f",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "changing IoT to batch load",
+        "commit": "c6f62ad",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "changed import of sidebaritem",
+        "commit": "a25a9f0",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "syntax changes",
+        "commit": "92cabbe",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "structured application",
+        "commit": "76ad759",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Added health checks",
+        "commit": "3f21d81",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Changed calls to async",
+        "commit": "73e19dd",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Changed settings to be similar to PGSQL init script",
+        "commit": "e05c175",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-10-30",
+    "changes": [
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "changed chatgpt to gemini",
+        "commit": "ff878bf",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Add row query references",
+        "commit": "2a1fe7b",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Removed dash from data generator references",
+        "commit": "211afb9",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Updated the call to data-generator",
+        "commit": "d904eed",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Updated handleRunQuery()",
+        "commit": "0828a1e",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Changed rowcount to display 0 instead of three dots",
+        "commit": "78a6a67",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Corrected the fetches to have file extensions",
+        "commit": "bcde7d4",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "adding rows",
+        "commit": "cfca969",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Added row query analytics",
+        "commit": "f867b85",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "single insert",
+        "commit": "4aeaaa1",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "removed loop with queries",
+        "commit": "e3c9e6e",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "next query",
+        "commit": "d3c2ce7",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "query params",
+        "commit": "3f63089",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "added queryparams",
+        "commit": "53b5036",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Fixed return reference",
+        "commit": "fab0404",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Put transaction back",
+        "commit": "fb1eb1a",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "pound sign change",
+        "commit": "4c1c3c8",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "added structkeyexists",
+        "commit": "2b15133",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "fixed syntax",
+        "commit": "00cb92a",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Removed dash from data generator references",
+        "commit": "02f5740",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Changes to data generator",
+        "commit": "25c636b",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Changed result to be JSON",
+        "commit": "bcdaabf",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Changed syntax for setting SQL for queries",
+        "commit": "7dd161f",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Fixed CF ROUND()",
+        "commit": "73f72f4",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Adding Analytics service layer and controllers",
+        "commit": "e6cd929",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "removed redundant onrequeststart",
+        "commit": "494bb79",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "removing dump",
+        "commit": "04ab8c0",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-10-29",
+    "changes": [
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Added call to Data Generator and row count",
+        "commit": "94a7f9d",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Renamed ChatGPT to Gemini",
+        "commit": "f70f695",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "onrequeststart change",
+        "commit": "e519d9d",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "fixed data source",
+        "commit": "b752588",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Fixed datasource",
+        "commit": "207d151",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Removed var from settings",
+        "commit": "3d1adc3",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Removed circular extension of root application.cfc",
+        "commit": "2c6a1eb",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Corrected app.cfc",
+        "commit": "a9d67dd",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "CFHeader corrections",
+        "commit": "80dc1a3",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Added row count",
+        "commit": "d6f6de0",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Data Generator code",
+        "commit": "6ff01d1",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-10-28",
+    "changes": [
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Added cloud logging",
+        "commit": "df73078",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "one more try",
+        "commit": "7f9c901",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "one more time",
+        "commit": "face79d",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Yaml changes",
+        "commit": "f17e448",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Yaml change",
+        "commit": "ff0d05f",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Update to cloud build yaml",
+        "commit": "39b06fd",
+        "breaking": false
+      },
+      {
+        "scope": "Frontend",
+        "type": "other",
+        "message": "Initial commit",
+        "commit": "1296ec9",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-10-24",
+    "changes": [
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Removed the WORKDIR and EXPOSE lines",
+        "commit": "4de3d51",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Remarked out WORKDIR and EXPOSE",
+        "commit": "9ffb16a",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Syntax change on install modules",
+        "commit": "cb7a3aa",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Trying modules for PGSQL and Graph",
+        "commit": "b301f17",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-10-23",
+    "changes": [
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Datasources syntax change",
+        "commit": "3b4c8ec",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-10-22",
+    "changes": [
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Removed remarked out datasources",
+        "commit": "c096337",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Datasources syntax change",
+        "commit": "1f13bd6",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "debug: Add detailed logging for this.datasources struct",
+        "commit": "71fc493",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Correct CFML syntax errors in Application.cfc",
+        "commit": "70ea0fc",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "debug: Simplify onApplicationStart, add DSN check in onRequestStart",
+        "commit": "1f0bfce",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Configure DSN in Application.cfc, remove entrypoint",
+        "commit": "c3036a0",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Remove entrypoint.sh, reverting to Application.cfc for DSN",
+        "commit": "c9181aa",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Add chown commands to Dockerfile for cfsetup permissions",
+        "commit": "2f28a79",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Set JAVA_HOME in entrypoint.sh for cfsetup",
+        "commit": "b5bd6ae",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Set JAVA_HOME in entrypoint.sh for cfsetup",
+        "commit": "b547afe",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Set JAVA_HOME in entrypoint.sh for cfsetup",
+        "commit": "2d91b04",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Use correct cfsetup and cfstart paths in entrypoint.sh",
+        "commit": "967f13a",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Use correct cfsetup and cfstart paths in entrypoint.sh",
+        "commit": "623b503",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "feat",
+        "message": "Use correct cfsetup path in entrypoint.sh",
+        "commit": "75f9303",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "feat",
+        "message": "Use correct cfsetup path in entrypoint.sh",
+        "commit": "5fa2137",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "debug: Look for cfsetup in /opt/coldfusion/bin, update cfstart path",
+        "commit": "3e61ade",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "debug: List bin directory contents in entrypoint",
+        "commit": "1548c56",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Use DB_IP instead of DB_HOST in entrypoint.sh",
+        "commit": "ed11238",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Update Dockerfile, Application.cfc, and add entrypoint.sh",
+        "commit": "cfed718",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Update Dockerfile command",
+        "commit": "f0dd1c5",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Update Dockerfile command",
+        "commit": "7206374",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Update Dockerfile command",
+        "commit": "8018a4b",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Update Dockerfile command",
+        "commit": "93eae78",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "feat",
+        "message": "Add database test query to index.cfm",
+        "commit": "d0dfd4b",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "refactor",
+        "message": "Try defining datasource with host/database properties",
+        "commit": "63572f3",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "debug: Log datasource keys after assignment",
+        "commit": "263314f",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "debug: Log datasource keys after assignment",
+        "commit": "fbd48de",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Final Application.cfc adjustments",
+        "commit": "157cda8",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Trim whitespace from DB env vars",
+        "commit": "7347466",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Correct JDBC URL logging and revert driver name",
+        "commit": "ef902bd",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Move datasource creation back to onApplicationStart",
+        "commit": "86eab77",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "refactor",
+        "message": "Define datasource in component body",
+        "commit": "eaee09c",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Install PostgreSQL driver via cfpm in Dockerfile",
+        "commit": "9b0cf3f",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Install PostgreSQL driver via cfpm in Dockerfile",
+        "commit": "11722ff",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "fix",
+        "message": "Initialize db_test_value to empty string instead of null",
+        "commit": "2cbda87",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "feat",
+        "message": "Add database test query to index.cfm",
+        "commit": "4b9a60e",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Trigger build: Fix secret permissions for Cloud Run SA",
+        "commit": "330f73c",
+        "breaking": false
+      },
+      {
+        "scope": "Backend",
+        "type": "feat",
+        "message": "Add database connection and update CI/CD",
+        "commit": "c8c98f7",
+        "breaking": false
+      }
+    ]
+  },
+  {
+    "date": "2025-10-21",
+    "changes": [
+      {
+        "scope": "Backend",
+        "type": "other",
+        "message": "Initial commit of cf-brews application",
+        "commit": "6674e4c",
+        "breaking": false
+      }
+    ]
+  }
+]
